@@ -1,0 +1,150 @@
+/* Bosh sahifa uchun umumiy stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* To‘liq qora fon */
+    color: white;
+}
+
+/* Header qismining dizayni */
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Yengilroq qora */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Logo bilan matn orasidagi masofa */
+}
+
+.hero-image {
+    width: 40px; /* Logoni o‘lchamini moslashtirish */
+    height: 40px;
+    border-radius: 50%; /* Dumaloq rasm */
+    object-fit: cover;
+    border: 2px solid #3498db;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: black; 
+    color: orangered;
+    padding: 5px 10px;
+}
+
+/* Section uchun dizayn */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer dizayni */
+footer {
+    background-color: #34495e; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.service-image {
+    width: 150px; /* Rasming kichik o'lchamda ko'rinishi uchun */
+    margin-top: 15px; /* Matndan keyin ozgina pastroqda bo'lishi uchun */
+    border-radius: 10px; /* Yengil yumaloq burchaklar, xohlasang */
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Ustunlar orasidagi masofa */
+    padding: 20px;
+    background-color: #111; /* Qoraroq fon */
+}
+
+.contact-item {
+    text-align: center;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s; /* Sekin kattalashish effekti */
+}
+
+.contact-icon:hover {
+    transform: scale(1.2); /* Hover qilinganda kattalashadi */
+}
+
+.contact-item p {
+    color: white;
+    margin: 5px 0 0;
+    font-weight: bold;
+}
+
+/* Kompyuterda katta ekranlar uchun */
+@media (min-width: 768px) {
+    .header-content {
+        flex-direction: row; /* Katta ekranlarda logo va matn yonma-yon ko'rinadi */
+    }
+
+    .hero-image {
+        width: 80px; /* Katta ekranda logoni kattaroq qilish */
+        height: 80px;
+    }
+
+    .title {
+        font-size: 28px; /* Katta ekranda sarlavha kattaroq bo'ladi */
+    }
+
+    .service-image {
+        width: 200px; /* Katta ekranlarda rasmni kattaroq qilish */
+    }
+
+    .contact-links {
+        gap: 60px; /* Kontaktlar orasidagi masofani kengaytirish */
+    }
+
+    .contact-icon {
+        width: 70px; /* Kontakt ikonalarini kattaroq qilish */
+        height: 70px;
+    }
+}
+
+/* Mobil qurilmalarda kichik ekranlar uchun */
+@media (max-width: 767px) {
+    .header-content {
+        flex-direction: column; /* Mobil qurilmalarda logo va matn vertikal joylashadi */
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 60px; /* Mobil qurilmada kichikroq logo */
+        height: 60px;
+    }
+
+    .title {
+        font-size: 20px; /* Mobil qurilmada sarlavhani kichraytirish */
+    }
+
+    .service-image {
+        width: 120px; /* Mobil qurilmada rasmni kichraytirish */
+    }
+
+    .contact-links {
+        flex-direction: column; /* Mobil qurilmalarda kontaktlar vertikal joylashadi */
+        gap: 20px;
+    }
+
+    .contact-icon {
+        width: 50px; /* Mobil qurilmada ikonalar kichrayadi */
+        height: 50px;
+    }
+}
